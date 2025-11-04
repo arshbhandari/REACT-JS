@@ -3,6 +3,9 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 
+
+// counter project using hooks 
+
 function App() {
 
   let [counter, setCounter] = useState(15) // counter and setCounter are the names they might be different
