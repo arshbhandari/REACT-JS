@@ -14,15 +14,23 @@ function App() {
 
   const addValue= ()=>{
     console.log("CLicked: "+ counter);
-    if(counter < 20){
-      counter = counter +1;
+    if(counter < 30){
+       setCounter(counter=>counter+1); 
+        setCounter(counter=>counter+1); 
+        setCounter(counter=> counter+1);
     }
-    setCounter(counter); 
+     
+    
   }
 
   const removeValue = ()=>{
-    if(counter>0) counter -= 1;
-    setCounter(counter);
+    // if(counter>0) counter -= 1;
+    // setCounter(counter);
+    if(counter>0){
+      setCounter(counter=>counter-1);
+      setCounter(counter=>counter-1);
+      setCounter(counter=>counter-1);
+    }
   }
   return (
     <>
